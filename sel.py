@@ -1,3 +1,5 @@
+import time
+
 import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -26,3 +28,11 @@ url = 'https://heroku.com'
 driver.get(url)
 print(driver.title)
 telebots(driver.title)
+while True:
+    time.sleep(5)
+    driver.get('http://youtube.com')
+    telebots(driver.title)
+    time.sleep(5)
+    driver.get('http://python.org/downloads')
+    telebots(driver.title)
+
